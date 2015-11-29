@@ -1,0 +1,102 @@
+<html><head><meta charset="utf-8">
+<script src="https://bam.nr-data.net/1/484bf3453a?a=10946853&amp;pl=1448826680895&amp;v=768.2acc9fa&amp;to=Jg5XQRQKX19XER5WRAAFUEE5BlJBVhAeXFgBBEE%3D&amp;ap=41&amp;be=1332&amp;fe=199&amp;dc=162&amp;f=%5B%5D&amp;perf=%7B%22timing%22:%7B%22of%22:1448826680895,%22n%22:0,%22u%22:1290,%22ue%22:1292,%22dl%22:1284,%22di%22:1495,%22ds%22:1495,%22de%22:1516,%22dc%22:1525,%22l%22:1532,%22le%22:1537,%22f%22:3,%22dn%22:3,%22dne%22:3,%22c%22:3,%22ce%22:3,%22rq%22:1283,%22rp%22:1284,%22rpe%22:1491%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken" type="text/javascript"></script><script src="https://js-agent.newrelic.com/nr-768.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"484bf3453a","applicationID":"10946853","transactionName":"Jg5XQRQKX19XER5WRAAFUEE5BlJBVhAeXFgBBEE=","queueTime":0,"applicationTime":41,"agent":"js-agent.newrelic.com/nr-768.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DriverReach</title><link href="/assets/application-d1e5278e910a4a9e567db4ec9d109846.css" rel="stylesheet" media="all" data-turbolinks-track="true"><script src="/assets/application-123bf66fa5db7892d12bc5113cf670cb.js" data-turbolinks-track="true"></script><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"><meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="AQejUOM+q+vHoO/59XcRBwGCsFyyMssoOQnmfmQMJcafLP5WlfSUfYGkwiALkw7A9gVDbsOrENN934n0YLk+QQ=="><link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"><link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"><link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"><link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"><link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"><link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"><link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"><link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"><link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"><link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"><link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"><link href="/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96"><link href="/android-chrome-192x192.png" rel="icon" type="image/png" sizes="192x192"><link href="/manifest.json" rel="manifest"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="msapplication-config" content="/browserconfig.xml"><meta name="theme-color" content="#ffffff"></head><body class="skin-1   modal-open  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div><div class="row"><div class="env-info alert alert-warning">You're on <strong>STAGING</strong>. Any changes you make will not affect production. </div></div><div class="credit_cards.index" id="wrapper"><nav class="navbar-default navbar-static-side skin-1" role="navigation"><div class="sidebar-collapse"><div class="logo-wrapper"><div class="profile-element"><img alt="DriverReach" src="/assets/DriverReach_White_BlueBG_140_PNG-99cb6bfda236336adb9bef03a5c20475.png"></div><div class="logo-element"><img alt="DriverReach" src="/assets/DriverReach_Symbol_BlueBG_34-2a9670bb3ea77da24ba2ae16cb161971.png"></div></div><ul class="nav metismenu" id="side-menu"><li><a href="/users/home"><i class="fa fa-home"></i><span class="nav-label">Home</span></a></li><li><a href="/users/settings"><i class="fa fa-cog"></i><span class="nav-label">Settings</span></a></li></ul></div></nav><div class="gray-bg" id="page-wrapper" style="min-height: 624px;"><div class="row border-bottom white-bg"><nav class="navbar-static-top" role="navigation"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary" style="margin-top: 5px;" href="#"><i class="fa fa-bars"></i></a><div class="nav navbar-top-links navbar-right" style="margin-right: 16px;"><div class="btn-group" style="margin-top: 3px;"><button class="dropdown-toggle btn btn-link" data-toggle="dropdown">Test QA<span class="caret"></span></button><ul class="dropdown-menu"><li style="margin-right: 0px;"><a href="/users/settings"><i class="fa fa-cog"></i><span>&nbsp; Settings</span></a></li><li class="divider" role="separator"></li><li style="margin-right: 0px;"><a href="/users/sign_out"><i class="fa fa-sign-out"></i><span>&nbsp;Log out</span></a></li></ul></div></div></nav></div><div class="row wrapper border-bottom white-bg page-heading"><div class="col-lg-10"><ol class="breadcrumb"><li><a href="/users/settings">Settings</a></li><li class="active"><strong>Provider settings</strong></li></ol></div></div><div class="wrapper wrapper-content row border-bottom white-bg dashboard-header"><div class="row"><div class="col-lg-12"><div class="tabs-container"><ul class="nav nav-tabs"><li><a href="#"><i class="fa fa-users"></i><span class="tab-h">Users</span></a></li><li><a href="#"><i class="fa fa-location-arrow"></i><span class="tab-h">Locations</span></a></li><li><a href="/settings/provider_settings"><i class="fa fa-search"></i><span class="tab-h">Background Checks</span></a></li><li class="active"><a href="#"><i class="fa fa-credit-card"></i><span class="tab-h">Billing</span></a></li></ul><div class="tab-content"><div class="tab-pane active"><div class="panel-body"><h2>Credit Card</h2><table class="table table-striped" id="credit-cards-table"><thead><tr><th>Name</th><th>Brand</th><th>Number</th><th>Expiration Date</th><th></th></tr></thead><tbody><tr><td>TestCardName</td><td>Visa</td><td>****************4242</td><td>5/2017</td><td class="text-right"><a class="btn btn-sm btn-danger" href="/users/credit_cards/341" rel="nofollow" data-method="delete" data-confirm="Are you sure you want to remove credit card 'TestCardName' ?">Remove</a></td></tr></tbody></table><div class="pull-right"><a class="btn btn-success" href="/users/credit_cards/new" data-remote="true" data-dialog="true">Change Credit Card</a></div></div></div></div></div></div></div></div><div class="footer text-center"><div>Powered by</div><div><a href="http://www.DriverReach.com/" target="_blank"><img alt="DriverReach logo" src="/assets/DriverReach_footer-d6bbd9af761da37f816e89d2168c9a03.gif"></a></div></div></div></div><div class="modal fade in" id="dr-modal" style="display: block;"><div class="modal-dialog">  <div class="modal-content partial-container"><div class="modal-header"><button class="close" aria-label="Close" onclick="if(typeof closeCallback=='function'){closeCallback();}" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button><h2 class="modal-title">Checkout</h2></div><div class="modal-body"><h3>Complete the payment information</h3><form class="new_credit_card" id="new_subscription" action="/users/credit_cards" method="post" accept-charset="UTF-8"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="dh0cpaxaXqwdzczg1xvNJACcGOmq3izMHiXThE6hK9PoNkGj2pBhOlvJ4Tkp/9Lj9xvr29tH9zda87wOShQwVA=="><input name="credit_card[stripe_card_token]" id="credit_card_stripe_card_token" type="hidden"><div class="form-group"><label>Name of card</label><input name="credit_card[name]" class="form-control" id="credit_card_name" style="border: 1px solid rgb(229, 230, 231); border-image: none;" type="text"><div class="error-text" id="name_error"></div></div><div class="form-group"><label>Card number</label><input name="number" class="form-control" id="number" style="border: 1px solid rgb(229, 230, 231); border-image: none;" type="text" value=""><div class="error-text" id="stripe_number_error"></div></div><div class="row"><div class="col-md-6 col-sm-6"><div class="form-group"><label>Expiration date</label><br><div class="row"><div class="col-md-6 col-sm-6"><select class="form-control" id="card_month" style="border: 1px solid red; border-image: none; display: none;">
+<option value="1">1 - January</option>
+<option value="2">2 - February</option>
+<option value="3">3 - March</option>
+<option value="4">4 - April</option>
+<option value="5">5 - May</option>
+<option value="6">6 - June</option>
+<option value="7">7 - July</option>
+<option value="8">8 - August</option>
+<option value="9">9 - September</option>
+<option value="10">10 - October</option>
+<option value="11">11 - November</option>
+<option value="12">12 - December</option>
+</select><div title="" class="chosen-container chosen-container-single" id="card_month_chosen" style="width: 100%;"><a tabindex="-1" class="chosen-single"><span>5 - May</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result result-selected" data-option-array-index="4"><em>5</em> - May</li></ul></div></div>
+</div><div class="col-md-6 col-sm-6"><select class="form-control" id="card_year" style="display: none;">
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<option value="2027">2027</option>
+<option value="2028">2028</option>
+<option value="2029">2029</option>
+<option value="2030">2030</option>
+</select><div title="" class="chosen-container chosen-container-single" id="card_year_chosen" style="width: 100%;"><a tabindex="-1" class="chosen-single"><span>2015</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result result-selected" data-option-array-index="0"><em>201</em>5</li><li class="active-result" data-option-array-index="1"><em>201</em>6</li><li class="active-result" data-option-array-index="2"><em>201</em>7</li><li class="active-result" data-option-array-index="3"><em>201</em>8</li><li class="active-result" data-option-array-index="4"><em>201</em>9</li></ul></div></div>
+</div></div><div class="error-text" id="stripe_exp_date_error">Your card's expiration month is invalid.</div></div></div><div class="col-md-6 col-sm-6"><div class="form-group"><label>CVV</label><input name="cvv" class="form-control" id="cvv" style="border: 1px solid rgb(229, 230, 231); border-image: none;" type="text" value=""><div class="error-text" id="stripe_cvv_error"></div></div></div></div><div class="error-text" id="stripe_error"></div><div class="form-group"><input name="commit" class="btn btn-success pull-right" type="submit" value="Save"></div></form><script>$.getScript('https://js.stripe.com/v2/', function(){
+  Stripe.setPublishableKey('pk_test_Szi47s9jphOsMItTibv8JlHX');
+  subscription.setupForm();
+});
+var subscription = {
+  setupForm: function() {
+    $('#new_subscription').submit(function(e) {
+      $('input[type=submit]').attr('disabled', true);
+      $('#stripe_error').text('');
+      $('#stripe_number_error').text('');
+      $('#stripe_exp_date_error').text('');
+      $('#stripe_cvv_error').text('');
+      $('#name_error').text('');
+      $('#number').css('border', '1px solid #e5e6e7');
+      $('#card_month').css('border', '1px solid #e5e6e7');
+      $('#cvv').css('border', '1px solid #e5e6e7');
+      $('#credit_card_name').css('border', '1px solid #e5e6e7');
+
+      e.preventDefault();
+
+      if($('#credit_card_name').val().length == 0){
+        $('#credit_card_name').css('border', '1px solid red');
+        $('#name_error').text("Can't be blank.");
+        $('input[type=submit]').attr('disabled', false);
+        return false
+      }
+
+      subscription.processCard();
+      return false;
+    });
+  },
+  processCard: function() {
+    var card;
+    card = {
+      number: $('#number').val(),
+      cvc: $('#cvv').val(),
+      expMonth: $('#card_month').val(),
+      expYear: $('#card_year').val()
+    };
+    Stripe.createToken(card, subscription.handleStripeResponse);
+  },
+  handleStripeResponse: function(status, response) {
+    if (status === 200) {
+      $('#credit_card_stripe_card_token').val(response.id);
+      $('#number').remove();
+      $('#cvv').remove();
+      $('#new_subscription')[0].submit();
+    } else {
+      if(response.error.param == 'number'){
+        $('#number').css('border', '1px solid red');
+        $('#stripe_number_error').text(response.error.message);
+      }else if(response.error.param == 'exp_month'){
+        $('#card_month').css('border', '1px solid red');
+        $('#stripe_exp_date_error').text(response.error.message);
+      }else if(response.error.param == 'cvc'){
+        $('#cvv').css('border', '1px solid red');
+        $('#stripe_cvv_error').text(response.error.message);
+      }else{
+        $('#stripe_error').text(response.error.message);
+      }
+      $('input[type=submit]').attr('disabled', false);
+    }
+  }
+};</script></div><div class="modal-footer"></div></div>  <div class="modal-content modal-spinner" style="text-align: center; font-size: 100px; display: none;">    <div class="modal-header">      <button class="close" aria-label="Close" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Loading...</h4>    </div>    <div class="modal-body">      <div class="sk-spinner sk-spinner-three-bounce"><div class="sk-bounce1"></div><div class="sk-bounce2"></div><div class="sk-bounce3"></div></div><br>    </div>  </div></div></div><div class="modal-backdrop fade in"></div><iframe name="stripeXDM_default518547_provider" id="stripeXDM_default518547_provider" src="https://js.stripe.com/v2/channel.html?stripe_xdm_e=https%3A%2F%2Fstaging.driverreachapp.com&amp;stripe_xdm_c=default518547&amp;stripe_xdm_p=1#__stripe_transport__" border="0" frameborder="0" style="left: 0px; top: -2000px; position: absolute;"></iframe></body></html>

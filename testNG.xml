@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+
+
+<suite name="suite" parallel="tests" thread-count="4">
+
+<test name="test Chrome" parallel="tests" thread-count="2">
+
+    <parameter name="browser" value="chrome"  />
+    <classes>
+        <class name="test.Autentification"/>
+        <class name="test.DriverReachTest2" />
+    </classes>
+</test>
+
+<test name="test IE" parallel="tests" thread-count="2">
+    <parameter name="browser" value="internet explorer" />
+    <classes>
+        <class name="test.Autentification"/>
+        <class name="test.DriverReachTest2"/>
+    </classes>
+</test>
+
+
+
+</suite>

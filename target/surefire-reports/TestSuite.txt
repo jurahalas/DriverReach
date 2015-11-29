@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 612.146 sec <<< FAILURE! - in TestSuite
+test2(test.DriverReachTest2)  Time elapsed: 405.121 sec  <<< FAILURE!
+com.codeborne.selenide.ex.ElementShouldNot: Element should not be visible {By.xpath: .//*[@id='page-wrapper']/div[3]/div/div/div/div/div/div/h3}
+Element: '<h3>You have no credit cards.</h3>'
+	at com.codeborne.selenide.impl.AbstractSelenideElement.checkCondition(AbstractSelenideElement.java:551)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.shouldNot(AbstractSelenideElement.java:565)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.shouldNot(AbstractSelenideElement.java:560)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.invokeShouldNot(AbstractSelenideElement.java:329)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.dispatchSelenideMethod(AbstractSelenideElement.java:201)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.dispatchAndRetry(AbstractSelenideElement.java:90)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.invoke(AbstractSelenideElement.java:65)
+	at com.codeborne.selenide.impl.WaitingSelenideElement.invoke(WaitingSelenideElement.java:19)
+	at com.sun.proxy.$Proxy6.shouldNotBe(Unknown Source)
+	at com.driverreach.pages.SettingsPage.creditCard(SettingsPage.java:65)
+	at test.DriverReachTest2.test2(DriverReachTest2.java:36)
+

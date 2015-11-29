@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">suite</th></tr><tr><td><a href="#t0">test Chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">50 735</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">test IE</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">591 340</td><td></td><td></td></tr><tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num attn">1</th><th class="num">642 075</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.Autentification</td><td><a href="#m0">signInSuccessfull</a></td><td rowspan="1">1448826329071</td><td rowspan="1">15021</td></tr><tr class="passedodd"><td rowspan="1">test.DriverReachTest2</td><td><a href="#m1">test2</a></td><td rowspan="1">1448826344093</td><td rowspan="1">29297</td></tr></tbody><tbody id="t1"><tr><th colspan="4">test IE &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.DriverReachTest2</td><td><a href="#m2">test2</a></td><td rowspan="1">1448826537162</td><td rowspan="1">377056</td></tr><tr><th colspan="4">test IE &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.Autentification</td><td><a href="#m3">signInSuccessfull</a></td><td rowspan="1">1448826328779</td><td rowspan="1">208383</td></tr></tbody></table><h2>test Chrome</h2><h3 id="m0">test.Autentification#signInSuccessfull</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">test.DriverReachTest2#test2</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>test IE</h2><h3 id="m2">test.DriverReachTest2#test2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element should be hidden {By.id: dr-modal}
+Element: &apos;&lt;div class=&quot;modal fade in&quot; id=&quot;dr-modal&quot;&gt;?
+Checkout
+Complete the payment information
+Name of card
+Card number
+Expiration date
+5 - May
+2015
+Your card&apos;s expiration month is invalid.
+CVV&lt;/div&gt;&apos;
+Screenshot: file:/C:/Users/Admin/Desktop/Papka/Home_driverreach/build/reports/tests/1448826894403.0.png
+Timeout: 10 s.
+	at com.codeborne.selenide.impl.AbstractSelenideElement.checkCondition(AbstractSelenideElement.java:554)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.should(AbstractSelenideElement.java:521)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.invokeShould(AbstractSelenideElement.java:309)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.dispatchSelenideMethod(AbstractSelenideElement.java:183)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.dispatchAndRetry(AbstractSelenideElement.java:90)
+	at com.codeborne.selenide.impl.AbstractSelenideElement.invoke(AbstractSelenideElement.java:65)
+	at com.codeborne.selenide.impl.WaitingSelenideElement.invoke(WaitingSelenideElement.java:19)
+	at com.sun.proxy.$Proxy6.waitUntil(Unknown Source)
+	at com.driverreach.pages.SettingsPage.creditCard(SettingsPage.java:91)
+	at test.DriverReachTest2.test2(DriverReachTest2.java:37)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">test.Autentification#signInSuccessfull</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
