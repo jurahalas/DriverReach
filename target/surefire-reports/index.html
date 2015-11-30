@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-suite">
-              <span class="suite-name border-failed">suite</span>
+              <span class="suite-name border-passed">suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-suite" class="hide-methods failed suite-suite"> (hide)</a> <!-- hide-methods failed suite-suite -->
-                      <a href="#" panel-name="suite-suite" class="show-methods failed suite-suite"> (show)</a> <!-- show-methods failed suite-suite -->
-                    </span>
-                    <div class="method-list-content failed suite-suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="test.DriverReachTest2" hash-for-method="test2">test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,6 +114,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-suite" title="test.DriverReachTest2" hash-for-method="test2">test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="test.DriverReachTest2" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-suite -->
                   </li>
                 </ul>
@@ -140,50 +131,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-suite" class="panel suite">
-          <div class="suite-suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.DriverReachTest2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
-                  <div class="stack-trace">Element should be hidden {By.id: dr-modal}
-Element: &apos;&lt;div class=&quot;modal fade in&quot; id=&quot;dr-modal&quot;&gt;×
-Checkout
-Complete the payment information
-Name of card
-Card number
-Expiration date
-5 - May
-2015
-Your card&apos;s expiration month is invalid.
-CVV&lt;/div&gt;&apos;
-Screenshot: file:/C:/Users/Admin/Desktop/Papka/Home_driverreach/build/reports/tests/1448826894403.0.png
-Timeout: 10 s.
-	at com.codeborne.selenide.impl.AbstractSelenideElement.checkCondition(AbstractSelenideElement.java:554)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.should(AbstractSelenideElement.java:521)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.invokeShould(AbstractSelenideElement.java:309)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.dispatchSelenideMethod(AbstractSelenideElement.java:183)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.dispatchAndRetry(AbstractSelenideElement.java:90)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.invoke(AbstractSelenideElement.java:65)
-	at com.codeborne.selenide.impl.WaitingSelenideElement.invoke(WaitingSelenideElement.java:19)
-	at com.sun.proxy.$Proxy6.waitUntil(Unknown Source)
-	at com.driverreach.pages.SettingsPage.creditCard(SettingsPage.java:91)
-	at test.DriverReachTest2.test2(DriverReachTest2.java:37)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-suite-class-failed -->
           <div class="suite-suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -212,6 +159,13 @@ Timeout: 10 s.
               <span class="class-name">test.DriverReachTest2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="test2">
@@ -297,24 +251,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test2')
 data.setCell(0, 2, 'test.DriverReachTest2')
-data.setCell(0, 3, 377056);
+data.setCell(0, 3, 37063);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'signInSuccessfull')
-data.setCell(1, 2, 'test.Autentification')
-data.setCell(1, 3, 208383);
+data.setCell(1, 1, 'test2')
+data.setCell(1, 2, 'test.DriverReachTest2')
+data.setCell(1, 3, 24267);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test2')
-data.setCell(2, 2, 'test.DriverReachTest2')
-data.setCell(2, 3, 29297);
+data.setCell(2, 1, 'signInSuccessfull')
+data.setCell(2, 2, 'test.Autentification')
+data.setCell(2, 3, 10232);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'signInSuccessfull')
 data.setCell(3, 2, 'test.Autentification')
-data.setCell(3, 3, 15021);
+data.setCell(3, 3, 10200);
 window.suiteTableData['suite']= { tableData: data, tableDiv: 'times-div-suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-suite">
               </div> <!-- times-div-suite -->
             </div> <!-- times-div -->
@@ -355,50 +309,42 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test.Autentification</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">Before(internet explorer)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
                 <span class="method-name">Before(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">Before(internet explorer)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">signInSuccessfull</span>
-                <span class="method-start">4636 ms</span>
+                <span class="method-start">4231 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">signInSuccessfull</span>
-                <span class="method-start">4928 ms</span>
+                <span class="method-start">4303 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.DriverReachTest2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test2</span>
-                <span class="method-start">19950 ms</span>
+                <span class="method-start">14465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">14504 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Autentification</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">quitTest</span>
-                <span class="method-start">49249 ms</span>
+                <span class="method-start">38773 ms</span>
               </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.DriverReachTest2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">test2</span>
-                <span class="method-start">213019 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Autentification</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">quitTest</span>
-                <span class="method-start">590080 ms</span>
+                <span class="method-start">51528 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

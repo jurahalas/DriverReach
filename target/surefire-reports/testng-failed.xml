@@ -2,11 +2,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="4" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [suite]" parallel="tests">
   <parameter name="browser" value="internet explorer"/>
+  <test name="test Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.Autentification">
+        <methods>
+          <include name="signInSuccessfull"/>
+          <include name="Before"/>
+          <include name="quitTest"/>
+          <include name="Before"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- test.Autentification -->
+      <class name="test.DriverReachTest2">
+        <methods>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- test.DriverReachTest2 -->
+    </classes>
+  </test> <!-- test Chrome(failed) -->
   <test name="test IE(failed)" parallel="tests">
     <parameter name="browser" value="internet explorer"/>
     <classes>
       <class name="test.Autentification">
         <methods>
+          <include name="signInSuccessfull"/>
           <include name="Before"/>
           <include name="quitTest"/>
           <include name="Before"/>

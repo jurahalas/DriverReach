@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="16.914" tests="4" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="34.43" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="14.1.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -12,7 +12,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7536"/>
+    <property name="idea.launcher.port" value="7532"/>
     <property name="user.script" value=""/>
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
@@ -64,25 +64,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="signInSuccessfull" classname="test.Autentification" time="9.323"/>
-  <testcase name="signInSuccessfull" classname="test.Autentification" time="191.102"/>
-  <testcase name="test2" classname="test.DriverReachTest2" time="7.591"/>
-  <testcase name="test2" classname="test.DriverReachTest2" time="405.121">
-    <failure message="Element should not be visible {By.xpath: .//*[@id=&apos;page-wrapper&apos;]/div[3]/div/div/div/div/div/div/h3}&#10;Element: &apos;&lt;h3&gt;You have no credit cards.&lt;/h3&gt;&apos;" type="com.codeborne.selenide.ex.ElementShouldNot"><![CDATA[com.codeborne.selenide.ex.ElementShouldNot: Element should not be visible {By.xpath: .//*[@id='page-wrapper']/div[3]/div/div/div/div/div/div/h3}
-Element: '<h3>You have no credit cards.</h3>'
-	at com.codeborne.selenide.impl.AbstractSelenideElement.checkCondition(AbstractSelenideElement.java:551)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.shouldNot(AbstractSelenideElement.java:565)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.shouldNot(AbstractSelenideElement.java:560)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.invokeShouldNot(AbstractSelenideElement.java:329)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.dispatchSelenideMethod(AbstractSelenideElement.java:201)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.dispatchAndRetry(AbstractSelenideElement.java:90)
-	at com.codeborne.selenide.impl.AbstractSelenideElement.invoke(AbstractSelenideElement.java:65)
-	at com.codeborne.selenide.impl.WaitingSelenideElement.invoke(WaitingSelenideElement.java:19)
-	at com.sun.proxy.$Proxy6.shouldNotBe(Unknown Source)
-	at com.driverreach.pages.SettingsPage.creditCard(SettingsPage.java:65)
-	at test.DriverReachTest2.test2(DriverReachTest2.java:36)
-]]></failure>
-    <system-out><![CDATA[You have no credit cards.
-]]></system-out>
-  </testcase>
+  <testcase name="signInSuccessfull" classname="test.Autentification" time="10.162"/>
+  <testcase name="signInSuccessfull" classname="test.Autentification" time="0.037"/>
+  <testcase name="test2" classname="test.DriverReachTest2" time="24.268"/>
+  <testcase name="test2" classname="test.DriverReachTest2" time="37.024"/>
 </testsuite>
