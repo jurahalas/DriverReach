@@ -20,7 +20,7 @@ public class Autentification extends Basic {
     public void signInSuccessfull(){
         LoginPage loginPage = open(ConfigProperties.getProperty("login.url"), LoginPage.class);
         HomePage homePage = loginPage.login(ConfigProperties.getProperty("login.name1"),ConfigProperties.getProperty("login.password1"));
-        homePage.homeLabel.shouldHave(text("Home"));
+        homePage.homeLabel();
        homePage.checkTheTable();
 
 }

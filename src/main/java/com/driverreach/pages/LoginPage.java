@@ -8,6 +8,7 @@ import ru.yandex.qatools.allure.annotations.Step;
 
 //import static com.codeborne.selenide.Condition.empty;
 //import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 
@@ -33,4 +34,7 @@ public class LoginPage {
         loginButton.shouldBe(Condition.visible).click();
         return page(HomePage.class);
         }
+    public void isEmailFildVisible(){
+        emailField.shouldBe(visible);
+    }
 }

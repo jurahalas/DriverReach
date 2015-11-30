@@ -104,6 +104,15 @@ public class SettingsPage extends HomePage{
         nameTable.shouldBe(nameCard());
         window.waitUntil(disappear,10000);
     }
+    public void  settingsLabel(){
+        settingsLabel.shouldHave(text("Settings"));
+    }
+    public void billingTabClick(){
+        billingTab.click();
+    }
+    public void creditCardEnabled(){
+        creditCard.shouldHave(text("Credit Card"));
+    }
 }
 
 

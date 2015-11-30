@@ -92,20 +92,24 @@ public class HomePage {
         applicationLabel.shouldBe(Condition.visible);
         profileName.shouldHave(Condition.text(st));
     }
+
     public SettingsPage clickOnSettings() {
         settingsButton.click();
         return page(SettingsPage.class);
     }
 
-    public  void checkTheTable() {
-        if (tableElement.is(hidden)){
+    public void checkTheTable() {
+        if (tableElement.is(hidden)) {
             logout();
-        }
-      else {
+        } else {
             emptyElementOfTable();
             random();
             logout();
-          }
+        }
 
 
-}}
+    }
+    public void homeLabel(){
+        homeLabel.shouldHave(text("Home"));
+    }
+}

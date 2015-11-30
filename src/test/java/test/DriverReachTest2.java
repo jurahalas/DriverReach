@@ -29,23 +29,23 @@ public class DriverReachTest2 extends Basic {
 
         LoginPage loginPage = open(ConfigProperties.getProperty("login.url"), LoginPage.class);
         HomePage homePage = loginPage.login(ConfigProperties.getProperty("login.name2"), ConfigProperties.getProperty("login.password2"));
-        homePage.homeLabel.shouldHave(text("Home"));
+        homePage.homeLabel();
         SettingsPage settingsPage = homePage.clickOnSettings();
-        settingsPage.settingsLabel.shouldHave(text("Settings"));
-        settingsPage.billingTab.click();
-        settingsPage.creditCard.shouldHave(text("Credit Card"));
+        settingsPage.settingsLabel();
+        settingsPage.billingTabClick();
+        settingsPage.creditCardEnabled();
         settingsPage.creditCard("TestCardName","4242424242424242","5","2017", "123");
         homePage.logout();
 
         loginPage = open(ConfigProperties.getProperty("login.url"), LoginPage.class);
         homePage = loginPage.login(ConfigProperties.getProperty("login.name2"), ConfigProperties.getProperty("login.password2"));
-        homePage.homeLabel.shouldHave(text("Home"));
+        homePage.homeLabel();
         settingsPage = homePage.clickOnSettings();
-        settingsPage.settingsLabel.shouldHave(text("Settings"));
-        settingsPage.billingTab.click();
+        settingsPage.settingsLabel();
+        settingsPage.billingTabClick();
         settingsPage.checkUserName();
         homePage.logout();
-        loginPage.emailField.shouldBe(visible);
+        loginPage.isEmailFildVisible();
 
     }
 }
